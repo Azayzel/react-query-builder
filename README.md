@@ -17,7 +17,7 @@ npm install react-query-builder-complete
  If providing a previously saved report
 
 ```js
-  <QueryBuilder user={this.props.User} ReportSet={this.state.reportSet} UpdateReport={this.onUpdateReport} />
+<QueryBuilder user={this.props.User} ReportSet={this.state.reportSet} UpdateReport={this.onUpdateReport} />
 ```
 
 If not providing a report
