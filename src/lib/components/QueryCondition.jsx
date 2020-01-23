@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import * as UIkit from "uikit";
 import { ReportItem } from "../classes/ReportSet";
 import "../query-tree.css";
+import { Lock, Unlock, Trash } from './Icons';
 
 /**
  * The Condition component which uses internal state to show the Operators
@@ -201,22 +202,14 @@ export class QueryCondition extends Component {
                       );
                     })}
                   </select>
-                ) : this.state.selectedCol == "last_updated_date" ? (
-                  <p onClick={this.showDateRangeScheduler}>
-                    Select A Range{" "}
-                    <i
-                      className="uk-margin-small-left uk-animation-slide-right"
-                      uk-icon="icon: calendar; ratio: 1.5"
-                    />
-                  </p>
                 ) : (
-                        <input
-                          className="uk-input uk-margin-small uk-animation-slide-right"
-                          name="selectedVal"
-                          onChange={this.handleValueChange}
-                          placeholder="Value"
-                        />
-                      )}
+                      <input
+                        className="uk-input uk-margin-small uk-animation-slide-right"
+                        name="selectedVal"
+                        onChange={this.handleValueChange}
+                        placeholder="Value"
+                      />
+                    )}
               </div>
             ) : null}
 
@@ -224,27 +217,24 @@ export class QueryCondition extends Component {
               <div className="uk-width-1-3 uk-inline uk-animation-slide-right uk-margin-small">
                 {this.state.editing ? (
                   <a
-                    href=""
-                    uk-icon="icon: unlock; ratio: 1.2"
                     uk-tooltip="Save and lock this condition"
                     onClick={this.saveConditional}
-                  />
+                  ><Unlock /></a>
                 ) : (
                     <a
                       href=""
                       className="uk-text-primary"
-                      uk-icon="icon: lock; ratio: 1.2"
                       uk-tooltip="Edit this condition"
                       onClick={this.editConditional}
-                    />
+                    ><Lock /></a>
                   )}
                 <a
                   href=""
                   className="uk-margin-small-left uk-text-danger"
-                  uk-icon="icon: trash; ratio: 1.2"
+
                   uk-tooltip="Remove this condition"
                   onClick={this.deleteConditional}
-                />
+                ><Trash /></a>
               </div>
             ) : null}
           </div>

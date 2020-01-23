@@ -138,9 +138,6 @@ export default class ReportSet {
       _query.where(qString);
     });
 
-    // If user wants ALL, give them ALL!
-    if (excludeEIU) _query.where(`item_type = '${"DES"}'`);
-
     // Default sort in squel is ASC, if selected DESC, set it
     let sortBy = this.report.sortBy;
     let sortDir = this.report.sortDir === "ASC" ? true : false;

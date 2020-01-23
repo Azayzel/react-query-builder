@@ -3,6 +3,7 @@ import * as UIkit from "uikit";
 import { ReportItem } from "../classes/ReportSet";
 import "../query-tree.css";
 import QueryCondition from './QueryCondition';
+import { Plus, Trash } from './Icons';
 
 /**
  * The Query Builder main component. Any new Query Groups will have the delete
@@ -174,24 +175,23 @@ export class QueryGroup extends Component {
 
               <div className="uk-button-group uk-margin-small-left">
                 <div className="uk-inline">
-                  <i uk-icon="icon: plus" uk-tooltip="Click to add" />
+                  <Plus uk-tooltip="Click to add" />
                   <div
                     uk-dropdown="mode: click; delay-hide: 0;"
                     id="addDropdown"
                   >
                     <p onClick={this.addGroup} className="uk-margin-small">
-                      <i uk-icon="icon: plus" />
+                      <Plus />
                       Add Group
                     </p>
                     <p onClick={this.addCondition} className="uk-margin-small">
-                      <i uk-icon="icon: plus" />
+                      <Plus />
                       Add Condition
                     </p>
                   </div>
                   {this.props.IsFirst ? null : (
-                    <i
+                    <Trash
                       className="uk-margin-small uk-margin-left"
-                      uk-icon="icon: trash; ratio: 1.2"
                       uk-tooltip="Remove this group"
                     />
                   )}

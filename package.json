@@ -1,15 +1,23 @@
 {
   "name": "react-query-builder",
   "version": "0.1.0",
+  "author": {
+    "name": "Azayzel",
+    "email": "josh.lavely@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Azayzel/react-query-builder.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "dependencies": {
-    "squel": "5.13.0",
     "react-highlight.js": "1.0.7",
-    "uikit": "3.3.0"
+    "squel": "5.13.0",
+    "uikit": "^3.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
