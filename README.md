@@ -2,10 +2,11 @@
 
 This project is still very much a WIP as I am adapting it for OSS. Feel free to submit PRs and make it better!
 
-## Demo
+[Demo](https://azayzel.github.io/react-query-builder-demo)
 
-<iframe src="https://azayzel.github.io/react-query-builder-demo" frameborder="0" allowfullscreen="true"> </iframe>
+![alt text][logo]
 
+[logo]: https://github.com/Azayzel/react-query-builder/query_builder.png "Example Query Builder"
 
 ## Installation
 
