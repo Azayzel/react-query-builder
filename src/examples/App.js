@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import QueryBuilder from "../lib";
+import QueryBuilder from "react-query-builder-complete";
 
 class App extends Component {
   constructor(props) {

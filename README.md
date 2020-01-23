@@ -5,5 +5,5 @@ This project is still very much a WIP as I am adapting it for OSS. Feel free to 
 ## Installation
 
 ```js
-npm install react-query-builder
+npm install react-query-builder-complete
 ```

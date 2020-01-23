@@ -1,6 +1,6 @@
 {
-  "name": "react-query-builder",
-  "version": "0.1.0",
+  "name": "react-query-builder-complete",
+  "version": "0.1.1",
   "author": {
     "name": "Azayzel",
     "email": "josh.lavely@gmail.com"
@@ -9,10 +9,12 @@
     "type": "git",
     "url": "https://github.com/Azayzel/react-query-builder.git"
   },
+  "license": "ISC",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "dependencies": {
     "react-highlight.js": "1.0.7",
@@ -35,6 +37,6 @@
     "build-examples": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "build": "babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   }
 }
