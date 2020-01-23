@@ -4,9 +4,7 @@ This project is still very much a WIP as I am adapting it for OSS. Feel free to 
 
 [Demo](https://azayzel.github.io/react-query-builder-demo)
 
-![alt text][logo]
-
-[logo]: https://github.com/Azayzel/react-query-builder/query_builder.png "Example Query Builder"
+![alt text][./query_builder.png "Example Query Builder"]
 
 ## Installation
 
