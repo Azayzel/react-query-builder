@@ -1,0 +1,59 @@
+.query-tree ul {
+  margin-left: 20px;
+}
+
+.query-tree li {
+  list-style-type: none;
+  margin: 10px;
+  position: relative;
+}
+
+.query-tree li::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -20px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 0 0px;
+  width: 20px;
+  height: 15px;
+}
+
+.query-tree li::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -20px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-radius: 0px 0 0 0;
+  width: 20px;
+  height: 100%;
+}
+
+.query-tree li:last-child::after {
+  display: none;
+}
+
+.query-tree li:last-child:before {
+  border-radius: 0 0 0 5px;
+}
+
+ul.query-tree > li:first-child::before {
+  display: none;
+}
+
+ul.query-tree > li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.conditional-saved {
+  outline: 0;
+  background-color: #fff;
+  border-color: #1e87f0;
+}
+
+.conditional-verified {
+  box-shadow: 0 5px 15px rgb(50, 210, 150, 0.8) !important;
+}
